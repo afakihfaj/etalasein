@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas: #F7F5F0;
+  --color-canvas-alt: #EFECE4;
+  --color-canvas-card: #FFFFFF;
+  --color-border-neutral: #E8E4DA;
+  --color-border-subtle: #DDD8CC;
+  --color-brand-green: #0F9F6E;
+  --color-brand-green-hover: #0B845A;
+  --color-brand-green-subtle: #EAF7F1;
+  --color-terracotta: #8C4F3B;
+  --color-terracotta-dark: #753F2D;
+  --color-terracotta-light: #F7EFEA;
+  --color-text-primary: #1C1917;
+  --color-text-secondary: #57534E;
+  --color-text-muted: #8A857D;
+}
+
+.dark {
+  --color-canvas: #090D12;
+  --color-canvas-alt: #161F2B;
+  --color-canvas-card: #0F151D;
+  --color-border-neutral: rgba(255, 255, 255, 0.08);
+  --color-border-subtle: rgba(255, 255, 255, 0.05);
+  --color-brand-green: #10B981;
+  --color-brand-green-hover: #059669;
+  --color-brand-green-subtle: rgba(16, 185, 129, 0.15);
+  --color-terracotta: #34D399;
+  --color-terracotta-dark: #059669;
+  --color-terracotta-light: rgba(52, 211, 153, 0.12);
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

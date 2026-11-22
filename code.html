@@ -1,0 +1,432 @@
+<!DOCTYPE html><html class="light" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "canvas": "#F7F5F0",
+            "canvas-alt": "#EFECE4",
+            "canvas-card": "#FFFFFF",
+            "border-neutral": "#E8E4DA",
+            "border-subtle": "#DDD8CC",
+            "brand-green": "#0F9F6E",
+            "brand-green-hover": "#0B845A",
+            "brand-green-subtle": "#EAF7F1",
+            "terracotta": "#8C4F3B",
+            "terracotta-dark": "#753F2D",
+            "terracotta-light": "#F7EFEA",
+            "text-primary": "#1C1917",
+            "text-secondary": "#57534E",
+            "text-muted": "#8A857D"
+          },
+          fontFamily: {
+            display: ["Space Grotesk", "sans-serif"],
+            body: ["Plus Jakarta Sans", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-canvas font-body text-text-primary antialiased selection:bg-brand-green/20 selection:text-brand-green">
+<!-- FLOATING MINIMALIST HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 pt-4 px-4 sm:px-6">
+<div class="max-w-[1140px] mx-auto bg-canvas-card/90 backdrop-blur-md rounded-full px-5 sm:px-7 py-3 border border-border-neutral shadow-[0_4px_20px_-4px_rgba(28,25,23,0.06)] flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-1.5 group" href="#">
+<span class="font-display font-bold text-xl text-text-primary tracking-tight">Etalase<span class="inline-block w-2.5 h-2.5 rounded-full bg-brand-green ml-0.5 group-hover:scale-125 transition-transform"></span>in</span>
+</a>
+<!-- Navigation -->
+<nav class="hidden lg:flex items-center gap-1.5 bg-canvas px-2.5 py-1 rounded-full border border-border-neutral/60">
+<a class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-text-secondary hover:text-text-primary hover:bg-canvas-card transition-all" href="#keunggulan">Keunggulan</a>
+<a class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-text-secondary hover:text-text-primary hover:bg-canvas-card transition-all" href="#portofolio">Studi Kasus Lele &amp; Kue</a>
+<a class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-text-secondary hover:text-text-primary hover:bg-canvas-card transition-all" href="#paket">Paket Harga</a>
+<a class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-text-secondary hover:text-text-primary hover:bg-canvas-card transition-all" href="#audit">Free Audit</a>
+</nav>
+<!-- CTA Action -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-green hover:bg-brand-green-hover text-white text-xs sm:text-sm font-semibold transition-all shadow-md shadow-brand-green/25 hover:shadow-lg hover:shadow-brand-green/35 hover:-translate-y-0.5 active:translate-y-0" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20mau%20konsultasi%20bikin%20landing%20page%20closing" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[17px]">chat</span>
+<span>Konsultasi WhatsApp</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-28 sm:pt-32 pb-16">
+<!-- HERO SECTION (Warm Minimalist Aesthetic) -->
+<section class="max-w-[1140px] mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-16 sm:pb-24">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto space-y-6">
+<!-- Terracotta Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-terracotta text-white shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+<span class="font-mono text-[11px] sm:text-xs font-semibold tracking-wider uppercase">JASA LANDING PAGE SPESIALIS CLOSING CEPAT</span>
+</div>
+<!-- Headline -->
+<h1 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[54px] text-text-primary tracking-tight leading-[1.18] sm:leading-[1.15]">
+          Iklan Jalan Terus, Tapi WhatsApp Sepi?
+          <span class="block text-terracotta mt-2 sm:mt-3">Masalahnya Bukan Iklan, Tapi Halaman Bio Kamu.</span>
+</h1>
+<!-- Subheadline -->
+<p class="font-body text-base sm:text-lg text-text-secondary max-w-2xl leading-relaxed">Kami ubah traffic boncos jadi banjir orderan langsung ke WhatsApp dengan web katalog 1-layar yang ringan, rapi, dan cepat dibuka. Didesain terima beres di Netlify khusus UMKM &amp; brand lokal.</p>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-3.5 pt-2 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-brand-green hover:bg-brand-green-hover text-white font-semibold text-sm sm:text-base transition-all duration-200 shadow-md shadow-brand-green/30 hover:shadow-lg hover:shadow-brand-green/40 hover:-translate-y-0.5" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20mau%20konsultasi%20bikin%20landing%20page%20closing" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[19px]">chat</span>
+<span>Konsultasi Gratis via WhatsApp</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-canvas-card hover:bg-canvas-alt text-text-primary font-semibold text-sm sm:text-base border border-border-neutral transition-all shadow-sm" href="#portofolio">
+<span>Lihat Portofolio Nyata</span>
+<span class="material-symbols-outlined text-[18px] text-text-muted">south</span>
+</a>
+</div>
+<!-- Micro-Trust Points -->
+<div class="flex flex-wrap items-center justify-center gap-y-2 gap-x-5 pt-3 text-text-secondary text-xs sm:text-sm font-medium">
+<div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand-green"></span><span>Pengerjaan 2-4 Hari Kerja</span></div>
+<span class="text-border-subtle">•</span>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-terracotta"></span>
+<span>Nol Biaya Sewa Server Bulanan</span>
+</div>
+<span class="text-border-subtle">•</span>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-brand-green"></span>
+<span>100% Mobile Optimized</span>
+</div>
+</div>
+<!-- Hero Minimalist Showcase Graphic (Inspired by Image 6 & 8) -->
+<div class="pt-8 sm:pt-10 w-full max-w-2xl">
+<div class="bg-canvas-card rounded-3xl p-6 sm:p-8 border border-border-neutral shadow-[0_8px_30px_rgba(28,25,23,0.06)] relative overflow-hidden">
+<!-- Warm backdrop pill -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+<!-- Phone UI wireframe -->
+<div class="w-48 sm:w-56 bg-canvas rounded-2xl p-3 border-2 border-text-primary shadow-sm flex flex-col items-center shrink-0">
+<div class="w-12 h-1.5 bg-text-primary/20 rounded-full mb-3"></div>
+<div class="grid grid-cols-2 gap-2 w-full mb-3">
+<div class="aspect-square rounded-lg bg-text-primary/10"></div>
+<div class="aspect-square rounded-lg bg-terracotta/20"></div>
+<div class="aspect-square rounded-lg bg-brand-green/20"></div>
+<div class="aspect-square rounded-lg bg-text-secondary/15"></div>
+</div>
+<div class="w-full py-1.5 bg-brand-green text-white text-[11px] font-bold rounded-lg text-center tracking-wide">
+                  ORDER SEKARANG
+                </div>
+</div>
+<!-- 3 Bullet Floating Pills -->
+<div class="space-y-3 w-full text-left">
+<div class="p-3.5 bg-canvas rounded-2xl border border-border-neutral flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-brand-green text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<h4 class="font-bold text-xs sm:text-sm text-text-primary">Info &amp; Harga Jelas dalam 1 Layar HP</h4>
+<p class="text-[11px] sm:text-xs text-text-secondary">Pelanggan langsung paham tanpa geser jauh.</p>
+</div>
+</div>
+<div class="p-3.5 bg-canvas rounded-2xl border border-border-neutral flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-brand-green text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<h4 class="font-bold text-xs sm:text-sm text-text-primary">Tombol Order Otomatis ke WhatsApp</h4>
+<p class="text-[11px] sm:text-xs text-text-secondary">Format pesanan &amp; jam antar langsung rapi.</p>
+</div>
+</div>
+<div class="p-3.5 bg-canvas rounded-2xl border border-border-neutral flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-brand-green text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<h4 class="font-bold text-xs sm:text-sm text-text-primary">Terima Beres &amp; Bebas Biaya Bulanan</h4>
+<p class="text-[11px] sm:text-xs text-text-secondary">Sekali bikin aktif permanen tanpa sewa hosting.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- KEUNGGULAN SECTION (3 Minimalist White Floating Cards) -->
+<section class="max-w-[1140px] mx-auto px-4 sm:px-6 py-12 sm:py-16" id="keunggulan">
+<div class="text-center max-w-xl mx-auto space-y-2 mb-10 sm:mb-12">
+<span class="font-mono text-xs font-semibold text-terracotta uppercase tracking-wider block">Kenapa Klien Memilih Etalase.in</span>
+<h2 class="font-display font-bold text-2xl sm:text-3xl text-text-primary">3 Formula Eksekusi Anti-Boncos</h2>
+<p class="font-body text-sm sm:text-base text-text-secondary">Bukan sekadar desain estetik, kami fokus pada kemudahan calon pembeli langsung checkout.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-canvas-card rounded-3xl p-7 border border-border-neutral shadow-[0_4px_20px_-2px_rgba(28,25,23,0.04)] flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200"><div class="space-y-4"><div class="w-11 h-11 rounded-2xl bg-brand-green-subtle text-brand-green flex items-center justify-center font-bold"><span class="material-symbols-outlined text-[24px]">bolt</span></div><div class="space-y-1.5"><span class="font-mono text-xs font-semibold text-terracotta">01. RINGAN &amp; ENTENG</span><h3 class="font-display font-bold text-lg sm:text-xl text-text-primary">Dibuka Lancar di HP Pembeli</h3></div><p class="text-sm text-text-secondary leading-relaxed">Format web statis bersih tanpa plugin berat yang membebani kuota pelanggan. Di-deploy praktis via Netlify sehingga loading terasa mulus di jaringan internet apa pun.</p></div><div class="pt-6 mt-6 border-t border-border-neutral flex items-center gap-2 text-xs font-mono font-semibold text-brand-green"><span class="material-symbols-outlined text-[16px]">cloud_done</span><span>Deploy Cepat di Netlify Cloud</span></div></div>
+<!-- Card 2 -->
+<div class="bg-canvas-card rounded-3xl p-7 border border-border-neutral shadow-[0_4px_20px_-2px_rgba(28,25,23,0.04)] flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200">
+<div class="space-y-4">
+<div class="w-11 h-11 rounded-2xl bg-terracotta-light text-terracotta flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[24px]">chat_bubble</span>
+</div>
+<div class="space-y-1.5">
+<span class="font-mono text-xs font-semibold text-terracotta">02. HIGH CONVERSION</span>
+<h3 class="font-display font-bold text-lg sm:text-xl text-text-primary">Alur Order WA Otomatis</h3>
+</div>
+<p class="text-sm text-text-secondary leading-relaxed">
+              Format pesanan, varian menu, dan jadwal pengiriman sudah langsung tersusun saat pembeli klik pesan. CS Anda tak perlu lagi capek menanyakan data dari nol.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-border-neutral flex items-center gap-2 text-xs font-mono font-semibold text-terracotta">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>Konversi Order Naik 2.3x</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-canvas-card rounded-3xl p-7 border border-border-neutral shadow-[0_4px_20px_-2px_rgba(28,25,23,0.04)] flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200">
+<div class="space-y-4">
+<div class="w-11 h-11 rounded-2xl bg-brand-green-subtle text-brand-green flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[24px]">savings</span>
+</div>
+<div class="space-y-1.5">
+<span class="font-mono text-xs font-semibold text-terracotta">03. RAMAH BUDGET</span>
+<h3 class="font-display font-bold text-lg sm:text-xl text-text-primary">Bebas Biaya Server Bulanan</h3>
+</div>
+<p class="text-sm text-text-secondary leading-relaxed">
+              Cukup sekali bayar terima beres. Tidak ada tagihan sewa hosting Rp 150rb/bulan atau biaya domain tahunan yang bikin pusing UMKM lokal.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-border-neutral flex items-center gap-2 text-xs font-mono font-semibold text-brand-green">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Rp 0 Biaya Maintenance Server</span>
+</div>
+</div>
+</div>
+</section>
+<!-- STUDI KASUS UNGGULAN (Sandikala Farm & Sugarlicious) -->
+<section class="max-w-[1140px] mx-auto px-4 sm:px-6 py-12 sm:py-16" id="portofolio">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<span class="font-mono text-xs font-semibold text-terracotta uppercase tracking-wider block">Portofolio &amp; Studi Kasus</span>
+<h2 class="font-display font-bold text-2xl sm:text-3xl text-text-primary mt-1">Dua Contoh Nyata Hasil Eksekusi</h2>
+</div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-canvas-card border border-border-neutral text-xs font-semibold text-text-secondary">
+<span class="w-2 h-2 rounded-full bg-brand-green"></span>
+<span>100% Live di Pasar UMKM Indonesia</span>
+</div>
+</div>
+<!-- SHOWCASE 1: Sandikala Farm (Situbondo) -->
+<div class="bg-canvas-card rounded-3xl p-6 sm:p-10 border border-border-neutral shadow-[0_4px_24px_rgba(28,25,23,0.05)] mb-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 space-y-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terracotta-light text-terracotta text-xs font-semibold">
+<span class="material-symbols-outlined text-[15px]">water_drop</span>
+<span>Agrikultur &amp; Pangan • Mangaran, Situbondo</span>
+</div>
+<h3 class="font-display font-bold text-2xl sm:text-3xl text-text-primary">
+              Sandikala Farm — Katalog Lele Bersih &amp; Pre-Order WhatsApp
+            </h3>
+<p class="text-sm sm:text-base text-text-secondary leading-relaxed">
+              UMKM budidaya lele segar hidup &amp; bersih siap goreng (9–12 ekor/kg). Sebelumnya order via chat manual sering berantakan karena pelanggan bolak-balik tanya harga dan jadwal pengiriman. Kini pembeli tinggal klik varian, jadwal antar pagi/sore, dan pesan terkirim otomatis ke WhatsApp.
+            </p>
+<!-- Testimoni Quote Box -->
+<div class="p-5 rounded-2xl bg-canvas border border-border-neutral space-y-2">
+<div class="flex items-center gap-1.5 text-terracotta">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+<span class="font-mono text-xs font-bold uppercase tracking-wider">Testimoni Klien</span>
+</div>
+<p class="text-sm text-text-primary italic font-medium">
+                "Praktis terima beres, orderan harian lele bersih &amp; pre-order langsung rapi masuk ke WhatsApp tanpa harus jelasin harga berkali-kali."
+              </p>
+<p class="font-mono text-xs text-text-muted">— Reza Andika, Owner Sandikala Farm</p>
+</div>
+<!-- Mini CTA -->
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-green hover:bg-brand-green-hover text-white text-xs sm:text-sm font-semibold transition-all shadow-md shadow-brand-green/20" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20mau%20bikin%20landing%20page%20seperti%20Sandikala%20Farm" rel="noopener noreferrer" target="_blank">
+<span>Mau Web Katalog Seperti Sandikala?</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Feature Specs Column -->
+<div class="lg:col-span-5 space-y-3.5">
+<div class="p-4 rounded-2xl bg-canvas border border-border-neutral flex items-center justify-between">
+<div>
+<h4 class="font-bold text-sm text-text-primary">0 Biaya Server</h4>
+<p class="text-xs text-text-secondary">Web statis ringan tanpa sewa bulanan</p>
+</div>
+<span class="material-symbols-outlined text-brand-green text-[26px]">cloud_done</span>
+</div>
+<div class="p-4 rounded-2xl bg-canvas border border-border-neutral flex items-center justify-between">
+<div>
+<h4 class="font-bold text-sm text-text-primary">1-Klik Order WhatsApp</h4>
+<p class="text-xs text-text-secondary">Pilihan kloter jam 09.00 / 16.00 otomatis</p>
+</div>
+<span class="material-symbols-outlined text-terracotta text-[26px]">touch_app</span>
+</div>
+<div class="p-4 rounded-2xl bg-canvas border border-border-neutral flex items-center justify-between"><div><h4 class="font-bold text-sm text-text-primary">Ringan di Segala Smartphone</h4><p class="text-xs text-text-secondary">Buka enteng tanpa lag di smartphone ibu rumah tangga &amp; pelanggan</p></div><span class="material-symbols-outlined text-brand-green text-[26px]">smartphone</span></div>
+</div>
+</div>
+</div>
+<!-- SHOWCASE 2: Sugarlicious Artisanal Bakehouse (Bali) -->
+<div class="bg-canvas-card rounded-3xl p-6 sm:p-10 border border-border-neutral shadow-[0_4px_24px_rgba(28,25,23,0.05)]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Visual Preview Box -->
+<div class="lg:col-span-6 order-2 lg:order-1">
+<div class="rounded-2xl overflow-hidden border border-border-neutral bg-canvas relative group shadow-sm">
+<div class="px-4 py-2.5 bg-canvas-alt/80 border-b border-border-neutral flex items-center gap-2">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-[#E57373]"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#FFD54F]"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#81C784]"></div>
+</div>
+<div class="mx-auto px-3 py-0.5 rounded-full bg-canvas-card text-text-secondary font-mono text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[12px]">lock</span>
+<span>sugarlicious.netlify.app</span>
+</div>
+</div>
+<div class="aspect-[16/10] overflow-hidden bg-canvas-alt">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal French bakery pastries and croissant hampers by Sugarlicious Bakehouse Bali" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0bUah5_ud8m6TYkIp0stKuH4xDOU5MgoGmavqtTlJ2C9kRN2toeSJv3ghPcXhpTyO22zHHWjq9Se1F2ZPuAQrmAV0Va3yZwA7Fu8cHSQrz9HSBMfRdq-sSE5hHLMQW0DSyJ_E8FwNNYUKtXdJvzko5nXmByz0MSzvdAWppCEGlQrrsxqul4jAWFPQoETdcMNAhN1zuhykltv2sEDyZrfP0_aM8lfp92blbDbgpjo">
+</div>
+</div>
+</div>
+<!-- Description & Metrics -->
+<div class="lg:col-span-6 space-y-5 order-1 lg:order-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-green-subtle text-brand-green text-xs font-semibold">
+<span class="material-symbols-outlined text-[15px]">bakery_dining</span>
+<span>F&amp;B Artisanal • Bali, Indonesia</span>
+</div>
+<h3 class="font-display font-bold text-2xl sm:text-3xl text-text-primary">
+              Sugarlicious Artisanal Bakehouse
+            </h3>
+<p class="text-sm sm:text-base text-text-secondary leading-relaxed">
+              Brand bakery premium di Bali yang membutuhkan etalase online cepat untuk mengonversi lead Instagram Ads langsung ke pesanan hampers via WhatsApp tanpa hambatan menu yang rumit.
+            </p>
+<div class="grid grid-cols-2 gap-3 pt-1">
+<div class="p-3.5 bg-canvas rounded-xl border border-border-neutral">
+<span class="font-mono text-[11px] text-text-muted block">PENINGKATAN ORDER</span>
+<span class="font-display font-bold text-lg sm:text-xl text-brand-green">+240% Hampers</span>
+</div>
+<div class="p-3.5 bg-canvas rounded-xl border border-border-neutral"><span class="font-mono text-[11px] text-text-muted block">PENGALAMAN AKSES</span><span class="font-display font-bold text-lg sm:text-xl text-terracotta">Enteng &amp; Tanpa Lemot</span></div>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-canvas-card border border-border-neutral text-text-primary hover:bg-canvas-alt text-xs sm:text-sm font-semibold transition-colors" href="https://sugarlicious.netlify.app" rel="noopener noreferrer" target="_blank">
+<span>Kunjungi Sugarlicious</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-brand-green hover:bg-brand-green-hover text-white text-xs sm:text-sm font-semibold transition-colors" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20mau%20bikin%20landing%20page%20seperti%20Sugarlicious" rel="noopener noreferrer" target="_blank">
+<span>Mau Desain Seperti Ini?</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PILIHAN PAKET HARGA (Warm Minimalist Pricing Cards) -->
+<section class="max-w-[1140px] mx-auto px-4 sm:px-6 py-12 sm:py-16" id="paket">
+<div class="text-center max-w-xl mx-auto space-y-2 mb-12"><span class="font-mono text-xs font-semibold text-terracotta uppercase tracking-wider block">INVESTASI SEKALI, BEBAS BIAYA BULANAN</span>
+<h2 class="font-display font-bold text-2xl sm:text-3xl text-text-primary">Pilihan Paket Terima Beres (Tanpa Biaya Tersembunyi)</h2>
+<p class="font-body text-sm sm:text-base text-text-secondary leading-relaxed">Sekali bayar aktif permanen. Gak ada biaya sewa server tahunan atau potongan komisi tiap ada order masuk.</p></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+<!-- Paket 1: Starter Launch -->
+<div class="bg-canvas-card rounded-3xl p-7 border border-border-neutral shadow-sm flex flex-col justify-between"><div class="space-y-5"><div><span class="font-mono text-[11px] font-semibold text-terracotta uppercase tracking-wider block mb-1">Paling Pas Buat Pemula / 1-3 Menu Andalan</span><h3 class="font-display font-bold text-xl text-text-primary">Starter Netlify</h3><p class="text-xs text-text-secondary mt-1">Cocok buat tes respon pasar tanpa beban biaya bulanan.</p></div><div><div class="flex items-baseline gap-2"><span class="font-display font-bold text-3xl text-text-primary">Rp 199.000</span><span class="text-xs text-text-muted line-through">Rp 350.000</span></div><span class="text-xs font-mono font-medium text-brand-green">Investasi 1x • Tanpa Iuran Server</span></div><ul class="space-y-3 pt-2 text-xs sm:text-sm text-text-secondary"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>1 Halaman Katalog Ringan (Fokus 1-3 Varian Menu/Produk)</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Subdomain Praktis Aktif Selamanya (namatoko.netlify.app)</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Tombol Order Otomatis Terhubung Langsung ke WhatsApp</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Gratis Hosting Netlify Rp 0 (Bebas Biaya Server Bulanan)</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Pengerjaan Terstruktur 2-3 Hari Kerja Siap Pakai</span></li></ul></div><div class="pt-7 mt-6 border-t border-border-neutral"><a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-canvas hover:bg-canvas-alt text-text-primary font-semibold text-xs sm:text-sm border border-border-neutral transition-all" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20ambil%20paket%20Starter%20Netlify%20Rp199rb"><span>Pilih Paket Starter</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a></div></div>
+<!-- Paket 2: Pro Conversion (Featured) -->
+<div class="bg-canvas-card rounded-3xl p-7 border-2 border-brand-green shadow-lg relative flex flex-col justify-between -mt-2 md:-mt-3 mb-2 md:mb-0"><div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-brand-green text-white font-mono text-[11px] font-bold tracking-wider uppercase shadow-sm whitespace-nowrap">🔥 BEST SELLER UMKM (HEMAT Rp 250RB)</div><div class="space-y-5 pt-2"><div><span class="font-mono text-[11px] font-semibold text-terracotta uppercase tracking-wider block mb-1">Usaha Tumbuh - Paling Diminati</span><h3 class="font-display font-bold text-xl text-text-primary flex items-center gap-1.5"><span>Katalog Lengkap WA</span><span class="w-2 h-2 rounded-full bg-brand-green"></span></h3><p class="text-xs text-text-secondary mt-1">Solusi praktis toko kuliner, hampers, &amp; UMKM lokal agar cepat closing.</p></div><div><div class="flex items-baseline gap-2"><span class="font-display font-bold text-3xl sm:text-4xl text-brand-green">Rp 399.000</span><span class="text-xs text-text-muted line-through">Rp 650.000</span></div><span class="text-xs font-mono font-medium text-brand-green">Bayar Sekali Terima Beres di Netlify</span></div><ul class="space-y-3 pt-2 text-xs sm:text-sm text-text-primary"><li class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Katalog Lengkap 5-10 Menu/Varian dengan Foto Menggoda</span></li><li class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Fitur Pilihan Kloter Pengantaran / Jam Kirim (Model Sandikala)</span></li><li class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Format Pesanan WhatsApp Otomatis (Tinggal Balas No Rekening)</span></li><li class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Banner Promo Khusus &amp; Desain Rapi Mobile-First</span></li><li class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Pengerjaan Terstruktur 2-4 Hari Kerja Sampai Tayang</span></li><li class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Garansi Revisi Tampilan &amp; Penyesuaian Menu</span></li></ul></div><div class="pt-7 mt-6 border-t border-border-neutral"><a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-brand-green hover:bg-brand-green-hover text-white font-semibold text-xs sm:text-sm shadow-md shadow-brand-green/30 hover:shadow-lg transition-all" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20ambil%20Paket%20Usaha%20Tumbuh%20Rp399rb"><span>Ambil Promo Paket Komplit</span><span class="material-symbols-outlined text-[16px]">bolt</span></a></div></div>
+<!-- Paket 3: Brand Custom -->
+<div class="bg-canvas-card rounded-3xl p-7 border border-border-neutral shadow-sm flex flex-col justify-between"><div class="space-y-5"><div><span class="font-mono text-[11px] font-semibold text-terracotta uppercase tracking-wider block mb-1">Brand Profesional &amp; Custom</span><h3 class="font-display font-bold text-xl text-text-primary">Custom Domain</h3><p class="text-xs text-text-secondary mt-1">Untuk brand yang mau pakai domain sendiri (.com / .id) tanpa label netlify.</p></div><div><div class="flex items-baseline gap-2"><span class="font-display font-bold text-3xl text-text-primary">Rp 799.000</span><span class="text-xs text-text-muted line-through">Rp 1.200.000</span></div><span class="text-xs font-mono font-medium text-text-secondary block mt-0.5">Setup Domain &amp; Hosting Pribadi</span></div><ul class="space-y-3 pt-2 text-xs sm:text-sm text-text-secondary"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Koneksi Nama Domain Sendiri (.com / .id / .co.id)</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Bebas Pakai Hosting Mandiri (cPanel/VPS) atau Netlify Custom</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Katalog Banyak Menu/Kategori Tanpa Batas</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Setup Meta Pixel &amp; TikTok Ads Tracker Terpasang</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-green text-[18px]">check_circle</span><span>Pendampingan Setting DNS &amp; Bimbingan Transparan</span></li></ul></div><div class="pt-7 mt-6 border-t border-border-neutral"><a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-canvas hover:bg-canvas-alt text-text-primary font-semibold text-xs sm:text-sm border border-border-neutral transition-all" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20butuh%20Paket%20Custom%20Domain%20Rp799rb"><span>Konsultasi Domain Sendiri</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a></div></div>
+</div><div class="mt-8 max-w-3xl mx-auto p-5 rounded-2xl bg-canvas border border-border-neutral flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left shadow-sm"><div class="w-11 h-11 rounded-2xl bg-terracotta-light text-terracotta flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[24px]">dns</span></div><div class="space-y-1 text-xs sm:text-sm"><h4 class="font-bold text-text-primary text-sm sm:text-base">Transparansi Server &amp; Opsi Domain Pribadi</h4><p class="text-text-secondary leading-relaxed">Paket terjangkau kami menggunakan infrastruktur <span class="font-medium text-text-primary">Netlify Cloud</span> (cepat, stabil, dan Rp 0 sewa server bulanan). Mau pakai domain sendiri (.com / .id) atau hosting pribadi (cPanel/VPS)? <span class="text-brand-green font-semibold">Bisa banget!</span> Anda bisa beli domain sendiri atau kami bantu siapkan tanpa biaya tersembunyi.</p></div></div><div class="mt-8 max-w-2xl mx-auto p-4 rounded-2xl bg-canvas-card border border-border-neutral shadow-sm flex items-center justify-center gap-3 text-center sm:text-left">
+  <div class="w-9 h-9 rounded-full bg-brand-green-subtle text-brand-green flex items-center justify-center shrink-0">
+    <span class="material-symbols-outlined text-[20px]">verified_user</span>
+  </div>
+  <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">
+    <strong class="text-text-primary font-semibold">Jaminan Bebas Risiko:</strong> Kalau web terasa berat atau format order WA gak jalan, kami perbaiki sampai tuntas tanpa tambahan biaya!
+  </p>
+</div>
+</section>
+<!-- FINAL HIGH-URGENCY CTA & FREE AUDIT (Warm Minimalist Box) -->
+<section class="max-w-[1140px] mx-auto px-4 sm:px-6 py-12" id="audit">
+<div class="bg-gradient-to-br from-terracotta-light via-canvas-card to-canvas-card rounded-3xl p-8 sm:p-14 border border-border-neutral text-center space-y-6 shadow-sm relative overflow-hidden">
+<!-- Top Pill -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-terracotta text-white font-mono text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">featured_seasonal_and_gifts</span>
+<span>SPECIAL OFFER: FREE AUDIT UNTUK 5 BRAND PERTAMA BULAN INI</span>
+</div>
+<div class="space-y-3 max-w-2xl mx-auto">
+<h2 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-text-primary tracking-tight">
+            Jangan Biarkan Calon Pembeli Kabur Karena Link Bio Berantakan.
+          </h2>
+<p class="text-sm sm:text-base text-text-secondary leading-relaxed">
+            Dapatkan <span class="text-text-primary font-bold">FREE Audit Halaman Penjualan Lama Anda</span> senilai <span class="line-through text-text-muted">Rp 500.000</span>. Tim kami akan membedah di mana titik kebocoran closing Anda tanpa komitmen bayar.
+          </p>
+</div>
+<!-- Emerald CTA Button -->
+<div class="pt-2 flex justify-center">
+<a class="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-brand-green hover:bg-brand-green-hover text-white font-semibold text-sm sm:text-base transition-all duration-200 shadow-lg shadow-brand-green/30 hover:shadow-xl hover:-translate-y-0.5" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20mau%20klaim%20FREE%20Audit%20Halaman%20Penjualan%20saya" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Klaim Free Audit &amp; Diskusi Sekarang</span>
+</a>
+</div>
+<!-- Micro guarantees -->
+<div class="flex flex-wrap items-center justify-center gap-5 pt-3 text-xs text-text-muted">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-brand-green text-[15px]">lock</span>
+<span>100% Rahasia &amp; Tanpa Kewajiban Beli</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-brand-green text-[15px]">schedule</span>
+<span>Balasan Cepat &lt; 15 Menit di Jam Kerja</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Warm, Minimal, Elegant) -->
+<footer class="w-full bg-canvas-card border-t border-border-neutral py-12">
+<div class="max-w-[1140px] mx-auto px-4 sm:px-6">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-border-neutral">
+<div class="space-y-1 text-center md:text-left">
+<div class="flex items-center justify-center md:justify-start gap-1.5">
+<span class="font-display font-bold text-xl text-text-primary tracking-tight">Etalase<span class="inline-block w-2.5 h-2.5 rounded-full bg-brand-green ml-0.5"></span>in</span>
+</div>
+<p class="text-xs sm:text-sm text-text-secondary">Sahabat Digital UMKM Indonesia — Solusi Landing Page &amp; Web Katalog Cepat Closing.</p>
+</div>
+<div class="flex items-center gap-4 text-xs font-semibold text-text-secondary">
+<a class="hover:text-text-primary transition-colors" href="#keunggulan">Keunggulan</a>
+<a class="hover:text-text-primary transition-colors" href="#portofolio">Portofolio</a>
+<a class="hover:text-text-primary transition-colors" href="#paket">Paket Harga</a>
+<a class="hover:text-brand-green transition-colors" href="https://wa.me/6281234567890">WhatsApp Direct</a>
+</div>
+</div>
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-text-muted">
+<p>© 2025 Etalase.in. Hak Cipta Dilindungi. Engineered for Maximum Conversion.</p>
+<div class="flex items-center gap-4">
+<a class="hover:text-text-primary transition-colors" href="#">Instagram</a>
+<a class="hover:text-text-primary transition-colors" href="#">TikTok</a>
+<a class="hover:text-text-primary transition-colors" href="#">Telegram</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating Mobile WhatsApp CTA Pill -->
+<div class="sm:hidden fixed bottom-4 left-4 right-4 z-50">
+<a class="flex items-center justify-center gap-2 w-full py-3 rounded-full bg-brand-green text-white font-semibold text-sm shadow-lg shadow-brand-green/40 active:scale-95 transition-transform" href="https://wa.me/6281234567890?text=Halo%20Etalase.in,%20saya%20mau%20konsultasi%20bikin%20landing%20page%20closing">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Konsultasi Gratis via WhatsApp</span>
+</a>
+</div>
+
+
+</body></html>
