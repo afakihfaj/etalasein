@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-terracotta text-white shadow-sm">
           <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
           <span className="font-mono text-[11px] sm:text-xs font-semibold tracking-wider uppercase">
-            JASA LANDING PAGE SPESIALIS CLOSING CEPAT
+            JASA WEB KATALOG &amp; LANDING PAGE 1-LAYAR
           </span>
         </div>
 
@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
 
         {/* Subheadline */}
         <p className="font-body text-base sm:text-lg text-text-secondary max-w-2xl leading-relaxed">
-          Kami ubah traffic boncos jadi banjir orderan langsung ke WhatsApp dengan web katalog 1-layar yang ringan, rapi, dan cepat dibuka. Didesain terima beres di Netlify khusus UMKM &amp; brand lokal.
+          Maksimalkan setiap klik iklan dan link bio jadi chat pesanan siap beli. Web katalog 1-layar yang ringan, praktis terima beres, dan langsung terhubung ke WhatsApp tanpa biaya server bulanan.
         </p>
 
         {/* CTA Buttons */}

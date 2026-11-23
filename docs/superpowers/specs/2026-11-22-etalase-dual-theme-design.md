@@ -62,7 +62,7 @@ Halaman terdiri dari 7 seksi utama dan 2 floating elements:
     *   Theme Switcher Button: Toggle ikon `Sun` / `Moon` dari Lucide.
     *   CTA Button: Konsultasi WhatsApp.
 2.  **Hero Section (`Hero.tsx`):**
-    *   Pill badge terakota: `JASA LANDING PAGE SPESIALIS CLOSING CEPAT`.
+    *   Pill badge terakota: `JASA WEB KATALOG & LANDING PAGE 1-LAYAR`.
     *   Headline: `Iklan Jalan Terus, Tapi WhatsApp Sepi? Masalahnya Bukan Iklan, Tapi Halaman Bio Kamu.`
     *   Subheadline penjelasan nilai tambah terima beres di Netlify.
     *   Dua tombol aksi: WhatsApp Direct & Scroll to Portfolio.
