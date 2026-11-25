@@ -115,7 +115,7 @@ export const Portfolio: React.FC = () => {
         </div>
       </div>
 
-      {/* SHOWCASE 2: Sugarlicious Artisanal Bakehouse (Bali) */}
+      {/* SHOWCASE 2: Sugarlicious Artisanal Bakehouse (Situbondo) */}
       <div className="bg-canvas-card rounded-3xl p-6 sm:p-10 border border-border-neutral shadow-[0_4px_24px_rgba(28,25,23,0.05)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.4)] transition-colors">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Visual Preview Box */}
@@ -135,7 +135,7 @@ export const Portfolio: React.FC = () => {
               <div className="aspect-[16/10] overflow-hidden bg-canvas-alt">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Artisanal French bakery pastries and croissant hampers by Sugarlicious Bakehouse Bali"
+                  alt="Artisanal French bakery pastries and croissant hampers by Sugarlicious Bakehouse Situbondo"
                   src={CASE_STUDY_SUGARLICIOUS.previewImageUrl}
                   loading="lazy"
                 />
@@ -161,7 +161,7 @@ export const Portfolio: React.FC = () => {
             </p>
 
             {/* Metrics */}
-            <div className="grid grid-cols-2 gap-3 pt-1">
+            <div className={`grid ${(CASE_STUDY_SUGARLICIOUS.metrics?.length ?? 0) > 1 ? 'grid-cols-2' : 'grid-cols-1 sm:max-w-xs'} gap-3 pt-1`}>
               {CASE_STUDY_SUGARLICIOUS.metrics?.map((m, mIdx) => (
                 <div
                   key={mIdx}

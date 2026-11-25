@@ -102,21 +102,16 @@ export const CASE_STUDY_SANDIKALA: CaseStudy = {
 export const CASE_STUDY_SUGARLICIOUS: CaseStudy = {
   id: 'sugarlicious',
   category: 'F&B Artisanal',
-  location: 'Bali, Indonesia',
+  location: 'Situbondo, Indonesia',
   title: 'Sugarlicious Artisanal Bakehouse',
   description:
-    'Brand bakery premium di Bali yang membutuhkan etalase online cepat untuk mengonversi lead Instagram Ads langsung ke pesanan hampers via WhatsApp tanpa hambatan menu yang rumit.',
+    'Brand bakery premium di Situbondo yang membutuhkan etalase online cepat untuk mengonversi lead Instagram Ads langsung ke pesanan hampers via WhatsApp tanpa hambatan menu yang rumit.',
   ctaText: 'Mau Desain Seperti Ini?',
   ctaMessage: 'Halo Etalase.in, saya mau bikin landing page seperti Sugarlicious',
   previewUrl: 'https://sugarlicious.netlify.app',
   previewImageUrl:
     'https://lh3.googleusercontent.com/aida-public/AB6AXuC0bUah5_ud8m6TYkIp0stKuH4xDOU5MgoGmavqtTlJ2C9kRN2toeSJv3ghPcXhpTyO22zHHWjq9Se1F2ZPuAQrmAV0Va3yZwA7Fu8cHSQrz9HSBMfRdq-sSE5hHLMQW0DSyJ_E8FwNNYUKtXdJvzko5nXmByz0MSzvdAWppCEGlQrrsxqul4jAWFPQoETdcMNAhN1zuhykltv2sEDyZrfP0_aM8lfp92blbDbgpjo',
   metrics: [
-    {
-      label: 'PENINGKATAN ORDER',
-      value: '+240% Hampers',
-      color: 'green',
-    },
     {
       label: 'PENGALAMAN AKSES',
       value: 'Enteng & Tanpa Lemot',
