@@ -1,4 +1,5 @@
 import React from 'react';
+import { Agentation } from 'agentation';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/sections/Hero';
@@ -23,6 +24,7 @@ export const App: React.FC = () => {
         </main>
         <Footer />
         <MobileCtaBar />
+        {import.meta.env.DEV && <Agentation />}
       </div>
     </ThemeProvider>
   );
