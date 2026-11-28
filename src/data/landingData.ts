@@ -80,6 +80,7 @@ export const CASE_STUDY_SANDIKALA: CaseStudy = {
   },
   ctaText: 'Mau Web Katalog Seperti Sandikala?',
   ctaMessage: 'Halo Etalase.in, saya mau bikin landing page seperti Sandikala Farm',
+  previewUrl: 'https://sandikala-farm.netlify.app/',
   specs: [
     {
       title: '0 Biaya Server',
